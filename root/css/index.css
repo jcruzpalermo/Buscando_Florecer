@@ -80,6 +80,8 @@ header {
 img {
     width: 100%;
     min-width: 320px;
+    animation: gira_mucho 5s alternate linear;
+
 }
 
 header .navbar {
@@ -202,9 +204,17 @@ header .menu__item {
 
 /*contenidos*/
 
-.contenidos__img {
+
+.contenidos__img  :hover{
     width: 50%;
     height: 25%;
+    animation: rebota infinite ease-in-out 6s;
+
+
+}
+
+.emprende {
+    background-image: linear-gradient(to bottom, #ffaada, #edace4, #daafea, #c5b1ed, #b1b3ed, #afb3ec, #adb2ea, #abb2e9, #bab0e8, #c9ade6, #d8aae1, #e5a8da);
 }
 
 /*contacto*/
@@ -501,5 +511,30 @@ footer {
     footer {
         width: 100%;
     }
-
+    
 }
+
+@keyframes rebota {
+    0%{ width: 100px; 
+    }
+
+    25%{ width: 300px; 
+    }
+
+    50%{ width: 200px;
+     }
+
+    75%{ width: 300px;
+    }
+    100%{ width: 100px;
+    }
+ }
+ 
+ @keyframes gira_mucho {
+     from {
+         transform: rotate(0deg);
+     }
+     to {
+         transform: rotate(270deg);
+     }
+ }
