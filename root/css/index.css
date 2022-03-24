@@ -27,20 +27,21 @@
 
 html {
     font-size: 62.5%;
-    
-  
+
+
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh; 
+    min-height: 100vh;
     color: var(--secondary);
     background-color: var(--principal);
     font-family: var(--font-primary);
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0rem;
 }
 
@@ -199,6 +200,8 @@ header .menu__item {
     gap: 15px;
 }
 
+
+
 .galeria__img {
     grid-area: img;
 }
@@ -206,7 +209,7 @@ header .menu__item {
 /*contenidos*/
 
 
-.contenidos__img{
+.contenidos__img {
     width: 50%;
     height: 25%;
 }
@@ -302,12 +305,12 @@ footer {
 
     .galeria {
         display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "img img"
-        "img img"
-        "img img";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "img img"
+            "img img"
+            "img img";
 
     }
 
@@ -438,6 +441,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
     .sorbete {
         padding-top: 1em;
     }
@@ -504,8 +508,5 @@ footer {
     footer {
         width: 100%;
     }
-    
-}
 
- 
- 
+}
