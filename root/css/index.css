@@ -80,7 +80,6 @@ header {
 img {
     width: 100%;
     min-width: 320px;
-
 }
 
 
@@ -95,10 +94,6 @@ header .navbar {
 
 header .logo {
     flex-basis: 30%;
-}
-
-.logo :hover {
-    animation: gira_mucho 5s alternate linear;
 }
 
 
@@ -175,9 +170,6 @@ header .menu__item {
 
 .emprende__p {
     font-size: var(--text-lg);
-    animation-duration: 5s;
-    animation-name: vuelve;
-    animation-iteration-count: infinite alternate;
 }
 
 /*nosotros*/
@@ -217,10 +209,6 @@ header .menu__item {
 .contenidos__img{
     width: 50%;
     height: 25%;
-}
-
-.emprende {
-    background-image: linear-gradient(to bottom, #ffaada, #edace4, #daafea, #c5b1ed, #b1b3ed, #afb3ec, #adb2ea, #abb2e9, #bab0e8, #c9ade6, #d8aae1, #e5a8da);
 }
 
 /*contacto*/
@@ -519,25 +507,5 @@ footer {
     
 }
 
-@keyframes gira_mucho {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes vuelve {
-   0% {
-     opacity: 0;
-   }
-   50% {
-       opacity: 0.5;
-   }
-   100% {
-     opacity: 1;
-   }
-}
  
  
