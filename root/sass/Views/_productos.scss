@@ -1,0 +1,15 @@
+.galeria {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "img img img"
+        "img img img";
+    gap: 15px;
+
+    &__img {
+        grid-area: img;
+    }
+    
+}

@@ -1,0 +1,13 @@
+/*nosotros*/
+
+.nosotros {
+    display: flex;
+    text-transform: uppercase;
+    font-size: $text-lg;
+    font-family: $font-secondary;
+    flex-basis: 50%;
+    color: $secondary;
+    flex-direction: column;
+    gap: 2rem;
+
+}
