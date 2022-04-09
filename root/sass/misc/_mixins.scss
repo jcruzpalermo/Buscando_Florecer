@@ -14,3 +14,11 @@
     margin: 0 auto;
     padding-left: 10vh;
 }
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include sizes(25%, 25%);
+ }

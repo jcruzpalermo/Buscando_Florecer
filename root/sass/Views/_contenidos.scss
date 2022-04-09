@@ -1,5 +1,11 @@
 /*contenidos*/
 
+.contenidos {
+    @extend.emprende;
+    background-color: aqua;
+    text-decoration-color: black;
+    text-align: center;
+}
 
 .contenidos__img {
     width: 50%;

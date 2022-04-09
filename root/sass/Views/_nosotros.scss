@@ -1,13 +1,19 @@
 /*nosotros*/
 
-.nosotros {
-    display: flex;
-    text-transform: uppercase;
-    font-size: $text-lg;
-    font-family: $font-secondary;
-    flex-basis: 50%;
-    color: $secondary;
-    flex-direction: column;
-    gap: 2rem;
+$nosotros: (
+  color: $secondary,
+  centro: center,
+  tamaño: $text-lg,
+  espacio : 2rem,
+  familia: $font-secondary,
+  texto: $principal,
+);
 
-}
+.nosotros {
+    text-align: map-get($nosotros, centro);
+    gap: map-get($nosotros, espacio);
+    font-size:map-get($nosotros, tamaño);
+    font-family: map-get($nosotros, $font-secondary);
+    text-decoration-color: map-get($nosotros , $principal);
+  }
+  

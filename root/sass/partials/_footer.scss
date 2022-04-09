@@ -6,4 +6,19 @@ footer {
     color: $secondary;
     font-size: $text-md;
 
+    $redes: (
+        twitter: #55acee,
+        facebook:  #dff2fd,
+        instagram: #6d8b
+); 
+
+
+    @each $red, $color in $redes {
+        .btn--#{$red} {
+            background-color: $color;
+        }
+    }
+
+    
+    
 }
