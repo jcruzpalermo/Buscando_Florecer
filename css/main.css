@@ -19,7 +19,9 @@ body {
   min-height: 100vh;
   color: #6d8b85;
   background-color: #f6d4d2;
-  font-family: "Laila", sans-serif; }
+  font-family: "Laila", sans-serif;
+  background-image: linear-gradient(to bottom, #f6d4dd, #f6dce7, #f6e5f0, #f7edf6, #f9f5fb, #f9f5fb, #f9f5fb, #f9f5fb, #f7edf6, #f6e5f0, #f6dce7, #f6d4dd);
+  max-width: 100%; }
 
 ol,
 ul {
@@ -52,7 +54,8 @@ a {
 
 /* PARTIALS */
 header {
-  background-color: #f6d4d2; }
+  background-color: #f6d4d2;
+  background-image: linear-gradient(to bottom, #f6d4d2, #f6d4d2, #f6d4d2, #ffffff); }
   header .navbar {
     min-height: 10vh;
     justify-content: space-between;
@@ -64,16 +67,18 @@ header {
   header .menu {
     flex-basis: 40%;
     justify-content: space-between; }
-    header .menu__item {
+    header .menu__item, header .menu__item--active {
       border: 2px solid #f6d4d2;
       transition: border-color .3s ease-in-out; }
-      header .menu__item:hover {
+      header .menu__item--active {
+        border-bottom: 2px solid #6d8b85; }
+      header .menu__item:hover, header .menu__item--active:hover {
         border-color: #6d8b85; }
-      header .menu__item .menu__link {
+      header .menu__item .menu__link, header .menu__item--active .menu__link {
         font-size: 1.8em;
         padding: 1rem; }
 
-.menu .menu__item:hover .sub-menu {
+.menu .menu__item:hover .sub-menu, .menu header .menu__item--active:hover .sub-menu, header .menu .menu__item--active:hover .sub-menu {
   display: block; }
 
 .sub-menu {
@@ -99,7 +104,10 @@ footer {
   justify-content: space-around;
   min-height: 10vh;
   color: #6d8b85;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  background-color: #f6d4d2;
+  min-width: 100%;
+  background-image: linear-gradient(to bottom, #ffffff, #f9f5fb, #f6eaf4, #f6dfeb, #f6d4dd); }
   footer .btn--twitter {
     background-color: #55acee; }
   footer .btn--facebook {
@@ -119,6 +127,14 @@ footer {
     flex-basis: 50%;
     min-width: 320px; }
 
+.noticias {
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 0 2rem;
+  background-image: linear-gradient(to bottom, #ffffff, #faf7fc, #f8eff7, #f8e7ef, #f8dee4, #f8dee4, #f8dee4, #f8dee4, #f8e7ef, #f8eff7, #faf7fc, #ffffff);
+  min-width: 100%;
+  justify-content: space-around; }
+
 .emprende, .contenidos {
   flex-basis: 50%; }
   .emprende__img {
@@ -128,6 +144,15 @@ footer {
     font-size: 2em; }
   .emprende__p {
     font-size: 2em; }
+
+.card-body {
+  width: 100%; }
+
+.card-text {
+  font-size: 2rem; }
+
+.card-tittle {
+  font-size: 4rem; }
 
 /*nosotros*/
 .nosotros {
@@ -204,7 +229,9 @@ footer {
   .galeria__img {
     grid-area: img; }
   footer {
-    width: 80%; } }
+    width: 80%; }
+  body {
+    max-width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .menu {
@@ -227,7 +254,9 @@ footer {
   .menu {
     font-size: .8em; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  body {
+    max-width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .menu {
@@ -263,7 +292,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "img img" "img img" "img img"; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  body {
+    max-width: 100%; } }
 
 @media screen and (max-width: 320px) {
   .menu {
@@ -307,4 +338,12 @@ footer {
   .carousel.pointer-event {
     display: table-row-group; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+  .card-body {
+    width: 100%; }
+  .card-tittle {
+    font-size: 2rem; }
+  .card-text {
+    font-size: 2rem; }
+  body {
+    max-width: 100%; } }

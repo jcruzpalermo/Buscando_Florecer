@@ -5,6 +5,9 @@ footer {
     min-height: 10vh;
     color: $secondary;
     font-size: $text-md;
+    background-color: $principal;
+    min-width: 100%;
+    background-image: linear-gradient(to bottom, #ffffff, #f9f5fb, #f6eaf4, #f6dfeb, #f6d4dd);
 
     $redes: (
         twitter: #55acee,

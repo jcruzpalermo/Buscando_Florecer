@@ -23,6 +23,8 @@ body {
     color: $secondary;
     background-color: $principal;
     font-family: $font-primary;
+    background-image: linear-gradient(to bottom, #f6d4dd, #f6dce7, #f6e5f0, #f7edf6, #f9f5fb, #f9f5fb, #f9f5fb, #f9f5fb, #f7edf6, #f6e5f0, #f6dce7, #f6d4dd);
+    max-width: 100%;
 }
 
 ol,
