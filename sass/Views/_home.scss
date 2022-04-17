@@ -32,8 +32,9 @@
     height: 25%;
     }
 
-    &__h1 {
-    font-size: $text-lg;
+    .emprende__h1 {
+        font-size: 2em;
+        text-align: center;
     }
 
     &__p {

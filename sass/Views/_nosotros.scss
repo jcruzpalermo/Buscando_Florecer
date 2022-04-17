@@ -16,4 +16,32 @@ $nosotros: (
     font-family: map-get($nosotros, $font-secondary);
     text-decoration-color: map-get($nosotros , $principal);
   }
+
+  .historia {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .accordion-body {
+    padding: 1rem 1.25rem;
+    font-size: $font-size;
+}
+
+  .accordion {
+    font-size: $font-size;
+}
+
+.accordion-header {
+  font-size: $font-size;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  font-size: 2rem;
+}
+
+.accordion-button {
+  font-size: 2rem;
+}
   
