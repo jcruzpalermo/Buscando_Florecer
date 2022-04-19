@@ -18,7 +18,8 @@
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
- }
- .box {
+}
+
+.box {
     @include sizes(25%, 25%);
- }
+}

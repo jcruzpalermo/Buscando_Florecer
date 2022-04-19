@@ -30,10 +30,6 @@
         font-size: 1.5em;
     }
 
-    .noticias {
-        flex-wrap: wrap;
-    }
-
     .noticias__picture {
         flex-grow: 1;
     }
@@ -71,6 +67,12 @@
         max-width: 100%;
     }
 
+    .accordion {
+        font-size: 2rem;
+        display: contents;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -82,6 +84,7 @@
 
     header {
         padding: 2em;
+        min-width: max-content;
     }
 
     header .navbar {
@@ -89,8 +92,30 @@
         flex-direction: column;
     }
 
+    .contacto {
+        display: flex;
+        padding-left: 0%;
+        font-size: 2rem;
+        background-color: aliceblue;
+    }
+
+    .contacto__h1 {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        font-size: 2rem;
+    }
+
+    .form-select {
+        font-size: 2rem;
+    }
+
     .noticias {
-        flex-wrap: wrap;
         width: 520px;
     }
 
@@ -111,9 +136,24 @@
     footer {
         width: 100%;
     }
+
     body {
         max-width: 100%;
     }
+
+    .accordion {
+        font-size: 2rem;
+        display: contents;
+    }
+
+    #carouselExampleSlidesOnly {
+        display: contents;
+    }
+
+    #carouselExampleIndicators {
+        display: inline;
+    }
+
 
 }
 
@@ -127,6 +167,25 @@
 
     .contacto {
         display: flex;
+        padding-left: 0%;
+        font-size: 3rem;
+        background-color: aliceblue;
+    }
+
+    .contacto__h1 {
+        font-size: 3rem;
+    }
+
+    .btn-primary {
+        font-size: 3rem;
+    }
+
+    .form-control {
+        font-size: 3rem;
+    }
+
+    .form-select {
+        font-size: 3rem;
     }
 
     input {
@@ -154,6 +213,14 @@
     .noticias {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .card-text {
+        font-size: 2.5rem;
+    }
+
+    .btn-primary {
+        font-size: 2.5rem;
     }
 
     .noticias__picture {
@@ -188,6 +255,32 @@
         max-width: 100%;
     }
 
+    .accordion {
+        font-size: 2rem;
+        display: contents;
+    }
+
+    .accordion-button {
+        font-size: 4rem;
+    }
+
+    .accordion-item:first-of-type .accordion-button {
+        font-size: 4rem;
+    }
+
+    .accordion-body {
+        padding: 1rem 1.25rem;
+        font-size: 4rem;
+    }
+
+    .carousel.pointer-event {
+        touch-action: pan-y;
+        display: inline;
+    }
+
+
+
+
 }
 
 
@@ -205,6 +298,24 @@
     .contacto {
         display: flex;
         padding-left: 0%;
+        font-size: 4rem;
+        background-color: aliceblue;
+    }
+
+    .contacto__h1 {
+        font-size: 4rem;
+    }
+
+    .btn-primary {
+        font-size: 4rem;
+    }
+
+    .form-control {
+        font-size: 4rem;
+    }
+
+    .form-select {
+        font-size: 4rem;
     }
 
     .nosotros {
@@ -216,8 +327,7 @@
     }
 
     .imagenLogo {
-        width: 25%;
-
+        width: 50%;
     }
 
     header {
@@ -227,6 +337,7 @@
     header .navbar {
         justify-content: center;
         flex-direction: column;
+        font-size: 4rem;
     }
 
     .noticias {
@@ -272,28 +383,77 @@
 
     footer {
         width: 100%;
-        
+
     }
 
     .card {
-        &-body{
+        &-body {
             width: 100%;
         }
-    
-        &-tittle{
-            font-size: 2rem;
+
+        &-tittle {
+            font-size: 4rem;
         }
-    
+
         &-text {
-            font-size: 2rem;
+            font-size: 4rem;
         }
-    
-    
+
+        min-width: 100%;
+
+        .btn-primary {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            font-size: xx-large;
+        }
+
+
     }
+
     body {
         max-width: 100%;
     }
 
-    
+    .accordion {
+        font-size: 4rem;
+        display: contents;
+    }
+
+    .accordion-button {
+        font-size: 4rem;
+    }
+
+    .accordion-item:first-of-type .accordion-button {
+        font-size: 4rem;
+    }
+
+    .accordion-body {
+        padding: 1rem 1.25rem;
+        font-size: 4rem;
+    }
+
+    .redes {
+        font-size: xx-large;
+    }
+
+    .carousel.pointer-event {
+        display: contents;
+    }
+
+    .emprende__p {
+        font-size: 4rem;
+    }
+
+    .emprende .emprende__h1,
+    .contenidos .emprende__h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+
+
+
+
 
 }

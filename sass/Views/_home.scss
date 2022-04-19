@@ -2,18 +2,19 @@
     gap: 2rem;
     align-items: flex-start;
     padding: 0 2rem;
-    
+
 
     &__picture {
-    flex-basis: 50%;
-    min-width: 320px;
+        flex-basis: 50%;
+        min-width: 320px;
     }
 
     &__img {
-    flex-basis: 50%;
-    min-width: 320px;
+        flex-basis: 50%;
+        min-width: 320px;
     }
 }
+
 .noticias {
     gap: 2rem;
     align-items: flex-start;
@@ -28,8 +29,8 @@
 
 
     &__img {
-    width: 25%;
-    height: 25%;
+        width: 25%;
+        height: 25%;
     }
 
     .emprende__h1 {
@@ -38,16 +39,16 @@
     }
 
     &__p {
-    font-size: $text-lg;
+        font-size: $text-lg;
     }
 }
 
 .card {
-    &-body{
+    &-body {
         width: 100%;
     }
 
-    
+
 
     &-text {
         font-size: 2rem;
@@ -55,6 +56,7 @@
 
 
 }
-.card-tittle{
+
+.card-tittle {
     font-size: 4rem;
 }

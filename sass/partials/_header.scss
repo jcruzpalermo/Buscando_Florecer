@@ -1,6 +1,6 @@
 header {
     background-color: $principal;
-    background-image: linear-gradient(to bottom,#f6d4d2,#f6d4d2,#f6d4d2, #ffffff,);
+    background-image: linear-gradient(to bottom, #f6d4d2, #f6d4d2, #f6d4d2, #ffffff, );
 
     .navbar {
         min-height: 10vh;
@@ -31,7 +31,7 @@ header {
             &:hover {
                 border-color: $secondary;
             }
-            
+
 
             .menu__link {
                 font-size: 1.8em;

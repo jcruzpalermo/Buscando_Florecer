@@ -1,7 +1,6 @@
 /*nosotros*/
 
-$nosotros: (
-  color: $secondary,
+$nosotros: (color: $secondary,
   centro: center,
   tamaño: $text-lg,
   espacio : 2rem,
@@ -10,25 +9,25 @@ $nosotros: (
 );
 
 .nosotros {
-    text-align: map-get($nosotros, centro);
-    gap: map-get($nosotros, espacio);
-    font-size:map-get($nosotros, tamaño);
-    font-family: map-get($nosotros, $font-secondary);
-    text-decoration-color: map-get($nosotros , $principal);
-  }
-
-  .historia {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .accordion-body {
-    padding: 1rem 1.25rem;
-    font-size: $font-size;
+  text-align: map-get($nosotros, centro);
+  gap: map-get($nosotros, espacio);
+  font-size: map-get($nosotros, tamaño);
+  font-family: map-get($nosotros, $font-secondary);
+  text-decoration-color: map-get($nosotros, $principal);
 }
 
-  .accordion {
-    font-size: $font-size;
+.historia {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem;
+  font-size: $font-size;
+}
+
+.accordion {
+  font-size: $font-size;
 }
 
 .accordion-header {
@@ -44,4 +43,3 @@ $nosotros: (
 .accordion-button {
   font-size: 2rem;
 }
-  
